@@ -30,10 +30,11 @@ Wat volgt zijn mijn persoonlijke aanbevelingen
 ### Ik gebruik Git voor (bijna) alles
 
 - [Scripts](https://github.com/bertvv/scripts), programmacode
-- Handleidingen, syllabi (LaTeX!)
+- Handleidingen, syllabi (LaTeX FTW!)
 - Presentaties ([Reveal.js](https://revealjs.com/#/)/[Gitpitch](https://gitpitch.com/))
 - Documentatie/nota's ([Markdown](https://guides.github.com/features/mastering-markdown/))
 - Verspreiden/opvolgen studentenwerk
+- Samenwerken met collega's
 
 +++
 
@@ -82,10 +83,14 @@ Tenminste, totdat je begrijpt wat je doet...
 - Geen beperkingen op mogelijkheden
 - Instructies zijn éénduidig en compact
 - Makkelijker reproduceerbaar
-- `git status` toont:
-    - huidige toestand
-    - volgende stap
-    - stap terugzetten
+
++++
+
+### `git status` FTW!
+
+- huidige toestand
+- volgende stap
+- stap terugzetten
 
 +++
 
@@ -105,7 +110,6 @@ Tenminste, totdat je begrijpt wat je doet...
 $ git config --global user.name "VOORNAAM NAAM"
 $ git config --global user.email "VOORNAAM.NAAM@EXAMPLE.COM"
 $ git config --global push.default simple
-$ git config --global core.autocrlf input
 ```
 
 of
@@ -278,6 +282,8 @@ Changes to be committed:
 $ git rebase --continue
 ```
 
++++
+
 ### Stap 5. Push!
 
 ```console
@@ -344,6 +350,12 @@ Maak workflow niet ingewikkelder dan **strikt** noodzakelijk
 
 +++
 
+### Git diff
+
+Bekijk lokale wijzigingen voordat je add/commit
+
++++
+
 ### Nooit publieke historiek overschrijven
 
 Doe dit niet:
@@ -363,7 +375,7 @@ Hoe langer je wacht, hoe meer merge-conflicten!
 
 +++
 
-### Read The Fine Error Message!
+### Read The Fine Error/Info Message!
 
 ---
 
