@@ -15,3 +15,8 @@ Deze repo bevat de (broncode van de) slides voor de workshop Git die ik gaf op 2
     - branching/merging
     - pull requests
 - Typische fouten rechtzetten
+
+# Licentie
+
+Gepubliceerd onder de Creative Commons Naamsvermelding-GelijkDelen 4.0 Internationaal (CC BY-SA 4.0) licentie. Voor meer info, zie
+<https://creativecommons.org/licenses/by-sa/4.0/deed.nl>.
