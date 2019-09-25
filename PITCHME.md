@@ -314,7 +314,7 @@ $ git status
 - Mogelijke bottlenecks
 
 
----?image=assets/gitflow.png&size=contain
++++?image=assets/gitflow.png&size=contain
 
 ### Main branches
 * master: product-worthy
@@ -328,7 +328,7 @@ $ git status
 * contain new features of the software
 * `git checkout -b myfeature develop`
 
-```
+```{bash}
 git checkout develop
 Switched to 'develop' branch
 git merge --no-ff myfeature
@@ -348,7 +348,6 @@ git push origin developer
 - Altijd committen op topic branch
 - Synchroniseren met "upstream"
 
-+++
 
 
 ---
