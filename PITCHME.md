@@ -306,15 +306,38 @@ $ git status
 
 +++
 
-### Topic branches
+### GitFlow
 
 - Software met discrete releases
-- Master is altijd "proper"
+- Master is altijd "proper" -> kan zo in productie
 - Complexer!
 - Mogelijke bottlenecks
 
 
----?image=assets/gitflow.png
+---?image=assets/gitflow.png&size=contain
+
+### Main branches
+* master: product-worthy
+* develop: latest changes for the next release
+
++++
+### Supporting branches
+
+* feature
+* branches off from develop
+* contain new features of the software
+* `git checkout -b myfeature develop`
+
+```
+git checkout develop
+Switched to 'develop' branch
+git merge --no-ff myfeature
+Updating ea1b82a..05e9557
+(Summary of changes)
+git branch -d myfeature
+Deleted branch myfeature (was 05e9557).
+git push origin developer
+```
 
 +++
 
