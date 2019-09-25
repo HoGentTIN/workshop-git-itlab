@@ -460,7 +460,7 @@ git config --global commit.template ~/.gitmessage.txt
 git commit
 ```
 
-
++++
 ### Atomaire commits <sup> 5 </sup>
 
 - Elke commit heeft precies één reden/doel
