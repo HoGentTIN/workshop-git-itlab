@@ -313,6 +313,9 @@ $ git status
 - Complexer!
 - Mogelijke bottlenecks
 
+
+---?image=assets/img/gitflow.png
+
 +++
 
 ### Pull requests
@@ -321,6 +324,9 @@ $ git status
 - Complexer op te zetten
 - Altijd committen op topic branch
 - Synchroniseren met "upstream"
+
++++
+
 
 ---
 
