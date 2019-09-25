@@ -314,7 +314,7 @@ $ git status
 - Mogelijke bottlenecks
 
 
----?image=assets/img/gitflow.png
+---?image=assets/gitflow.png
 
 +++
 
