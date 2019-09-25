@@ -305,6 +305,13 @@ $ git status
 - Feature flags
 
 +++
+### Pull requests
+
+- Voor medewerkers die geen schrijftoegang hebben
+- Complexer op te zetten
+- Altijd committen op topic branch
+- Synchroniseren met "upstream"
++++
 
 ### GitFlow
 
@@ -352,13 +359,48 @@ git push origin developer
 
 ![no-ff](https://nvie.com/img/merge-without-ff@2x.png)
 +++
+### Praktisch 1
 
-### Pull requests
+- Nieuwe feature?
 
-- Voor medewerkers die geen schrijftoegang hebben
-- Complexer op te zetten
-- Altijd committen op topic branch
-- Synchroniseren met "upstream"
+- Nieuwe branch van dev
+- Kies goede naam voor branch (bv. issue naam Jira, prefix met taak Bv. layout/proj-127)
+
++++
+### Praktisch 2
+
+- Maak aanpassingen
+- Commit
+- Atomaire commits
+
+Pro-tip: gebruik .gitmessage (zie tips)
++++
+### Praktisch 3
+
+- Open een pull request
+- @mention gebruiken om collega's te refereren
+- Bespreek de code voordat je merged/rebased
+
++++
+### Praktisch 4
+
+- Bespreek de code
+	- Code style oké?
+	- Unit testen geschreven?
+	- Of geef positieve feedback
+- Gebruik markdown om tekst te stijlen
+
++++
+### Praktisch 5 (optioneel)
+
+Gebruik je een CI/CD pipeline: laat het zijn werk doen voordat je merged.
+- CI/CD pipeline is the single source of truth
+
++++
+### Praktisch 6
+
+- Merge of Rebase de branch
+- Vergeet feat-branch niet te verwijderen
 
 
 
