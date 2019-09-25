@@ -319,19 +319,18 @@ $ git status
 +++
 ### Main branches
 * master: product-worthy
-* develop: latest changes for the next release
+* develop: laatste aanpassingen voor de nieuwe versie
 
 +++
 ### Supporting branches
 
 * feature
-* branches off from develop
-* contain new features of the software
+* branches van develop
+* heeft nieuwe features van de software
 
 +++ 
-`git checkout -b myfeature develop`
-
-```{bash}
+```
+git checkout -b myfeature develop
 git checkout develop
 Switched to 'develop' branch
 git merge --no-ff myfeature
@@ -342,6 +341,16 @@ Deleted branch myfeature (was 05e9557).
 git push origin developer
 ```
 
++++
+### Wat met die -no-ff?
+
+- Fast forward treedt op wanneer de branch waarom je merged geen aanpassing heeft en er dus een lineair verband bestaat
+- Fast forward verplaatst dan gewoon de head, zonder merge commit te maken
+- `no-ff` verplicht om een merge commit te maken
+
++++
+
+![no-ff](https://nvie.com/img/merge-without-ff@2x.png)
 +++
 
 ### Pull requests
