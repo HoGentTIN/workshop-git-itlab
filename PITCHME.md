@@ -316,6 +316,7 @@ $ git status
 
 +++?image=assets/gitflow.png&size=contain
 
++++
 ### Main branches
 * master: product-worthy
 * develop: latest changes for the next release
@@ -326,7 +327,9 @@ $ git status
 * feature
 * branches off from develop
 * contain new features of the software
-* `git checkout -b myfeature develop`
+
++++ 
+`git checkout -b myfeature develop`
 
 ```{bash}
 git checkout develop
