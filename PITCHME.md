@@ -410,13 +410,13 @@ Gebruik je een CI/CD pipeline: laat het zijn werk doen voordat je merged.
 
 +++
 
-### KISS
+### KISS <sup> 1 </sup>
 
 Maak workflow niet ingewikkelder dan **strikt** noodzakelijk
 
 +++
 
-### Schrijf goede commit-boodschappen
+### Schrijf goede commit-boodschappen <sup> 2 </sup>
 
 - voor je teamleden
 - voor je toekomstige zelf
@@ -424,21 +424,57 @@ Maak workflow niet ingewikkelder dan **strikt** noodzakelijk
 <https://chris.beams.io/posts/git-commit/>
 
 +++
+### How to write a `git commit` Message
 
-### Atomaire commits
+1. Separate subject from body with a blank line
+2. Limit the subject line to 50 characters
+3. Start with a capital letter for the subject
+4. Do not end the subject line with a dot
+5. Use the imperative in the subject line
+6. Max body characters: 72
+7. Use body to explain what and why and how (if necessary)
+
++++
+
+Commit messages met een body 
+
+[https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration](Customize Git configuration.)
+
++++
+### Tips and tricks <sup> 3 </sup>
+
+Gebruik jouw favoriete editor (eg TextMate):
+
+```console
+git config --global core.editor "mate -w"
+```
+
+Andere: [example](https://help.github.com/articles/associating-text-editors-with-git/)
+
++++
+### Tips and tricks <sup> 4 </sup>
+Gebruik git template zodat iedereen dezelfde structuur hanteert.
+
+```bash
+git config --global commit.template ~/.gitmessage.txt
+git commit
+```
+
+
+### Atomaire commits <sup> 5 </sup>
 
 - Elke commit heeft precies één reden/doel
 - Voeg individuele bestanden toe aan staging
 
 +++
 
-### Git diff
+### Git diff <sup> 6 </sup>
 
 Bekijk lokale wijzigingen voordat je add/commit
 
 +++
 
-### Nooit publieke historiek overschrijven
+### Nooit publieke historiek overschrijven <sup> 7 </sup>
 
 Doe dit niet:
 
@@ -451,7 +487,7 @@ Gebruik in plaats daarvan `git revert`
 
 +++
 
-### Regelmatig pushen
+### Regelmatig pushen <sup> 8 </sup>
 
 Hoe langer je wacht, hoe meer merge-conflicten!
 
@@ -464,6 +500,12 @@ Hoe langer je wacht, hoe meer merge-conflicten!
 ## Typische fouten rechtzetten
 
 <https://ohshitgit.com/>
+
+## Oefeningen
+
+- <https://gitexercises.fracz.com/>
+
+- <https://github.com/rferri-gr8/git-flow-exercise>
 
 ---
 
