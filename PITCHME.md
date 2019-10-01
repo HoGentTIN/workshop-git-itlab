@@ -1,18 +1,16 @@
 # Workshop Git
 
-HOGENT IT-lab, 2018-11-13
-
-Bert Van Vreckem <bert.vanvreckem@gmail.com>
+HOGENT IT-lab, 2019
 
 +++
 
-@color[#FF0000](Heb je een vraag? Onderbreek mij!)
+@color[#FF0000](Heb je een vraag? Onderbreek ons!)
 
 +++
 
 *There is more than one way to do it*
 
-Wat volgt zijn mijn persoonlijke aanbevelingen
+Wat volgt zijn aanbevelingen
 
 +++
 
@@ -27,7 +25,7 @@ Wat volgt zijn mijn persoonlijke aanbevelingen
 
 +++
 
-### Ik gebruik Git voor (bijna) alles
+### Ik (Bert) gebruik Git voor (bijna) alles
 
 - [Scripts](https://github.com/bertvv/scripts), programmacode
 - Handleidingen, syllabi (LaTeX FTW!)
@@ -40,7 +38,7 @@ Wat volgt zijn mijn persoonlijke aanbevelingen
 
 ```console
 $ find ~ -type d -name '.git' | wc -l
-808
+860
 ```
 
 +++
@@ -84,6 +82,8 @@ Tenminste, totdat je begrijpt wat je doet...
 - Instructies zijn éénduidig en compact
 - Makkelijker reproduceerbaar
 
++++?image=https://www.gitkraken.com/images/og-image.jpg&size=contain
+
 +++
 
 ### `git status` FTW!
@@ -110,13 +110,19 @@ Tenminste, totdat je begrijpt wat je doet...
 $ git config --global user.name "VOORNAAM NAAM"
 $ git config --global user.email "VOORNAAM.NAAM@EXAMPLE.COM"
 $ git config --global push.default simple
+$ git config --global pull.rebase true
+$ git config --global core.autocrlf input
 ```
+
++++
 
 of
 
 ```console
 $ git config --global --edit
 ```
+
+Voorbeeld: <https://github.com/bertvv/dotfiles/blob/master/.gitconfig>
 
 +++
 
@@ -305,12 +311,14 @@ $ git status
 - Feature flags
 
 +++
+
 ### Pull requests
 
 - Voor medewerkers die geen schrijftoegang hebben
 - Complexer op te zetten
 - Altijd committen op topic branch
 - Synchroniseren met "upstream"
+
 +++
 
 ### GitFlow
@@ -320,22 +328,25 @@ $ git status
 - Complexer!
 - Mogelijke bottlenecks
 
-
 +++?image=assets/gitflow.png&size=contain
 
 +++
+
 ### Main branches
+
 * master: product-worthy
 * develop: laatste aanpassingen voor de nieuwe versie
 
 +++
+
 ### Supporting branches
 
 * feature
 * branches van develop
 * heeft nieuwe features van de software
 
-+++ 
++++
+
 ```
 git checkout -b myfeature develop
 git checkout develop
@@ -349,6 +360,7 @@ git push origin developer
 ```
 
 +++
+
 ### Wat met die -no-ff?
 
 - Fast forward treedt op wanneer de branch waarom je merged geen aanpassing heeft en er dus een lineair verband bestaat
@@ -358,15 +370,18 @@ git push origin developer
 +++
 
 ![no-ff](https://nvie.com/img/merge-without-ff@2x.png)
+
 +++
+
 ### Praktisch 1
 
-- Nieuwe feature?
+Nieuwe feature?
 
 - Nieuwe branch van dev
 - Kies goede naam voor branch (bv. issue naam Jira, prefix met taak Bv. layout/proj-127)
 
 +++
+
 ### Praktisch 2
 
 - Maak aanpassingen
@@ -374,7 +389,9 @@ git push origin developer
 - Atomaire commits
 
 Pro-tip: gebruik .gitmessage (zie tips)
+
 +++
+
 ### Praktisch 3
 
 - Open een pull request
@@ -382,27 +399,28 @@ Pro-tip: gebruik .gitmessage (zie tips)
 - Bespreek de code voordat je merged/rebased
 
 +++
+
 ### Praktisch 4
 
 - Bespreek de code
-	- Code style oké?
-	- Unit testen geschreven?
-	- Of geef positieve feedback
+    - Code style oké?
+    - Unit testen geschreven?
+    - Of geef positieve feedback
 - Gebruik markdown om tekst te stijlen
 
 +++
+
 ### Praktisch 5 (optioneel)
 
 Gebruik je een CI/CD pipeline: laat het zijn werk doen voordat je merged.
 - CI/CD pipeline is the single source of truth
 
 +++
+
 ### Praktisch 6
 
 - Merge of Rebase de branch
 - Vergeet feat-branch niet te verwijderen
-
-
 
 ---
 
@@ -424,6 +442,7 @@ Maak workflow niet ingewikkelder dan **strikt** noodzakelijk
 <https://chris.beams.io/posts/git-commit/>
 
 +++
+
 ### How to write a `git commit` Message
 
 1. Separate subject from body with a blank line
@@ -436,11 +455,12 @@ Maak workflow niet ingewikkelder dan **strikt** noodzakelijk
 
 +++
 
-Commit messages met een body 
+Commit messages met een body
 
 [https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration](Customize Git configuration.)
 
 +++
+
 ### Tips and tricks <sup> 3 </sup>
 
 Gebruik jouw favoriete editor (eg TextMate):
@@ -452,7 +472,9 @@ git config --global core.editor "mate -w"
 Andere: [example](https://help.github.com/articles/associating-text-editors-with-git/)
 
 +++
+
 ### Tips and tricks <sup> 4 </sup>
+
 Gebruik git template zodat iedereen dezelfde structuur hanteert.
 
 ```bash
@@ -461,6 +483,7 @@ git commit
 ```
 
 +++
+
 ### Atomaire commits <sup> 5 </sup>
 
 - Elke commit heeft precies één reden/doel
@@ -511,7 +534,7 @@ Hoe langer je wacht, hoe meer merge-conflicten!
 
 ## Q&A
 
-Ask me anything!
+Ask us anything!
 
 (about Git...)
 
