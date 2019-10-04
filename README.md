@@ -1,6 +1,8 @@
 # Workshop Git
 
-Deze repo bevat de (broncode van de) slides voor de workshop Git die ik gaf op 2018-11-13 voor het IT-lab. De presentatie zelf is te bekijken via <https://gitpitch.com/HoGentTIN/workshop-git-itlab>.
+Deze repo bevat de (broncode van de) slides voor de workshop Git voor het IT-lab (2018 en 2019). De presentatie zelf is te bekijken via <https://gitpitch.com/HoGentTIN/workshop-git-itlab>.
+
+Sandbox voor oefenen: <https://classroom.github.com/g/z9LNDmw9>
 
 ## Inhoud
 
